@@ -141,18 +141,18 @@
          wrong: "Nin bardidre nenp irtittu!"
       },
        {
-  q: "Guess where this pic was taken?",
-  img: "queenn.png",
-  options: ["Birthday bash", "College fest", "Sleepover", "Movie night"],
-  answer: 1,
-  wrong: "Haha nope! That was the college fest day ✨"
+  q: "Remember my blood Group?",
+ 
+  options: ["A +ve", "O +ve", "O -ve", "A -ve"],
+  answer: 3,
+  wrong: "Areeee"
 },
       {
         q: "Who is my Best friend?",
         options: ["Mythri", "Mayuri"],
         answer: 1,
         crct:"Bcoz, You are the Bestest💖",
-        wrong: "Bcoz You are the Bestest💖"
+        wrong: "Nahhh, You are the Bestest💖"
       },
         {
         q: "Whats my 3rd sem score?",
@@ -235,7 +235,7 @@ function checkAnswer(index) {
       resultEl.innerText = `You got ${score}/${questions.length} right!`;
       restartBtn.style.display = "block";
 
-      if (score >= 2) {
+      if (score >= 1) {
         bigConfetti();
         finalMsgEl.innerHTML = `
         🥳 Surprise Unlocked!<br>
