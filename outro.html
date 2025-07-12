@@ -73,7 +73,7 @@
 
     .cta-links {
       z-index: 2;
-      margin-top: 25px;
+      margin-top: 5px;
       display: flex;
       flex-direction: column;
       gap: 15px;
@@ -107,13 +107,13 @@
 
     @media (max-width: 500px) {
       .title { font-size: 1.5rem;
-      
+            margin-top: -100px;
       }
       .footer{
         right: none;
       }
       .emoji { font-size: 4rem; }
-      .cta-links a { font-size: 1rem; padding: 8px 16px; }
+      .cta-links a { font-size: 1.1rem; padding: 8px 12px; }
     }
 
 
@@ -137,17 +137,46 @@
   <div class="title">And with that... the magic rests for now 🌙</div>
   <div class="emoji">🧚‍♀️<br></div>
 
+  <style>
+    .cta-links{
+        display: flex;
+        flex-direction: row  ;
+        gap:20px;
+    }
+    .inn{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+        @media (max-width: 500px){
+              .cta-links{
+        display: flex;
+        flex-direction: column  ;
+        /* gap:20px; */
+    }
+    .inn{
+       
+        gap: 10px;
+    }
+        }
+
+   
+  </style>
   <div class="cta-links">
+    <div class="inn">
     <a href="booknew.html">📖 Revisit Memories</a>
     <a href="quiz.html">🎯 Replay Quiz</a>
     <a href="baloon.html">🚀 Baloon game</a>
+    </div>
+    <div class="inn">
     <a href="timeline.html">⏳ Back to Timeline</a>
     <a href="letter.html">💌 Reread The Letter</a>
     <a href="hero.html">🚀 Go to Start</a>
+    </div>
   </div>
 
   <div class="footer">
-    Built with Javascript, not 💖 <br> by ur average Techy Bro -Nz!😅 
+    Built with Javascript, not ❤️ <br> by ur average Techy Bro -Nz!😅 
   </div>
 
   <!-- Background Music -->
